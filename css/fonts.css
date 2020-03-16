@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/raleway/raleway-thin-webfont.eot"), url("../fonts/raleway/raleway-thin-webfont.woff2") format("woff2"), url("../fonts/raleway/raleway-thin-webfont.woff") format("woff"), url("../fonts/raleway/raleway-thin-webfont.ttf") format("truetype"), url("../fonts/raleway/raleway-thin-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/raleway/raleway-bold-webfont.eot"), url("../fonts/raleway/raleway-bold-webfont.woff2") format("woff2"), url("../fonts/raleway/raleway-bold-webfont.woff") format("woff"), url("../fonts/raleway/raleway-bold-webfont.ttf") format("truetype"), url("../fonts/raleway/raleway-bold-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hind';
+  src: url("../fonts/Hind/hind-medium-webfont.eot"), url("../fonts/Hind/hind-medium-webfont.woff2") format("woff2"), url("../fonts/Hind/hind-medium-webfont.woff") format("woff"), url("../fonts/Hind/hind-medium-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=fonts.css.map */
