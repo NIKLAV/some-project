@@ -34,13 +34,13 @@ html {
   background: url(../img/header.jpg) center center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
 }
 
 .container {
   max-width: 340px;
   margin: 0 auto;
   padding-top: 2rem;
+  padding-bottom: 10rem;
 }
 
 .logo {
@@ -96,7 +96,7 @@ html {
   width: 60px;
   height: 60px;
   padding: 1rem;
-  background: rgba(13, 110, 139, 0.75);
+  background: rgba(16, 62, 77, 0.75);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,13 +268,13 @@ html {
 
 /*--------------------SLIDER*/
 .slidershow {
-  margin-top: 80%;
+  margin-top: 60%;
   width: 340px;
   overflow: hidden;
 }
 
 .navigation {
-  margin-top: 40%;
+  margin-top: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,5 +339,179 @@ input[name="r"] {
 
 #r5:checked ~ .s1 {
   margin-left: -80%;
+}
+
+.btn {
+  margin: 0 auto;
+  margin-top: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  background: none;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: #03fcad;
+  background-color: rgba(3, 252, 173, 0.1);
+  -webkit-box-shadow: 0 0 10px #03fcad, 0 0 40px #03fcad;
+          box-shadow: 0 0 10px #03fcad, 0 0 40px #03fcad;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(3, 252, 173, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(3, 252, 173, 0.1);
+}
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 340px;
+}
+
+.section__header {
+  text-align: center;
+}
+
+.section__title {
+  font-size: 4.8rem;
+  font-family: 'Hind';
+  color: #576671;
+}
+
+.section__title:after {
+  content: '';
+  display: block;
+  margin: 8% auto 0;
+  width: 30px;
+  height: 2px;
+  background-color: #03fcad;
+}
+
+.section__text {
+  display: block;
+  margin-top: 8%;
+  font-size: 1.8rem;
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: #576671;
+}
+
+.container__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.card {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  height: 100%;
+  width: 130px;
+  height: 130px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 2s;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#01a791), to(#02bd4a));
+  background: linear-gradient(to bottom, #01a791, #02bd4a);
+}
+
+.front:hover,
+.back:hover {
+  background-color: rgba(3, 252, 173, 0.1);
+  -webkit-box-shadow: 0 0 10px #03fcad, 0 0 40px #03fcad;
+          box-shadow: 0 0 10px #03fcad, 0 0 40px #03fcad;
+}
+
+.front {
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.back {
+  background-color: blue;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card__text {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.under-card__title {
+  font-size: 2rem;
+  font-family: 'Raleway';
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-down {
+  background-color: #17daa3;
 }
 /*# sourceMappingURL=global.css.map */
