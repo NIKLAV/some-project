@@ -19,17 +19,29 @@
   font-style: normal;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 html {
   font-size: 10px;
   font-family: 'Raleway';
 }
 
-/*-----------------------------------Header--------------------*/
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(3, 252, 173, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(3, 252, 173, 0.1);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .header {
   background: url(../img/header.jpg) center center no-repeat;
   background-size: cover;
@@ -73,7 +85,6 @@ html {
           transform: scale(1.2);
 }
 
-/* -----------------MENU STYLES-------- */
 .menu-wrap {
   position: fixed;
   top: 0;
@@ -266,7 +277,6 @@ html {
   color: #03fcad;
 }
 
-/*--------------------SLIDER*/
 .slidershow {
   margin-top: 60%;
   width: 340px;
@@ -372,19 +382,6 @@ input[name="r"] {
           box-shadow: 0 0 10px #03fcad, 0 0 40px #03fcad;
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
-}
-
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(3, 252, 173, 0.3);
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-track-piece {
-  background-color: rgba(3, 252, 173, 0.1);
 }
 
 .section {

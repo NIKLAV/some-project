@@ -1,0 +1,91 @@
+.container__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20%;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.card {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  height: 100%;
+  width: 130px;
+  height: 130px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 2s;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#01a791), to(#02bd4a));
+  background: linear-gradient(to bottom, #01a791, #02bd4a);
+}
+
+.front:hover,
+.back:hover {
+  background-color: rgba(3, 252, 173, 0.1);
+  -webkit-box-shadow: 0 0 10px #03fcad, 0 0 40px #03fcad;
+          box-shadow: 0 0 10px #03fcad, 0 0 40px #03fcad;
+}
+
+.front {
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.back {
+  background-color: blue;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card__text {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.under-card__title {
+  font-size: 2rem;
+  font-family: 'Raleway';
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-down {
+  margin-top: 20%;
+  background-color: #17daa3;
+}
+/*# sourceMappingURL=cards.css.map */

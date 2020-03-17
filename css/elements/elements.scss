@@ -2,3 +2,13 @@ html {
     font-size: 10px;
     font-family: 'Raleway';
 }
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba($color: #03fcad, $alpha: 0.3);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-track-piece { 
+    background-color: rgba($color: #03fcad, $alpha: 0.1);
+  }
